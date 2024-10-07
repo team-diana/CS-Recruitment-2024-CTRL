@@ -1,6 +1,6 @@
 # [Across The Universe](https://www.youtube.com/watch?v=NLddD6Xf-8g)
 
-One essential feature of every rover, is the ability to traverse terrain. Indeed, this is the essential element distinguishing a rover from a probe or from a dishwasher for that matter. The more the rover is able to navigate autonomously, the better. 
+One essential feature of every rover is the ability to traverse terrain. Indeed, this is the essential element distinguishing a rover from a probe or from a dishwasher for that matter. The more the rover is able to navigate autonomously, the better. 
 
 ## Instructions 
 We need you to design a navigation system for a rover so that it can explore an area currently being investigated. 
