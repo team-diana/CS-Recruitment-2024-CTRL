@@ -1,28 +1,28 @@
-# CS-Recruitment-2024-CTRL
+# [Across The Universe](https://www.youtube.com/watch?v=NLddD6Xf-8g)
 
-If you're done with the form, now it's time for the real challenge to prove your worth to the DIANA Computer Science Department Committee. 
+One essential feature of every rover, is the ability to traverse terrain. Indeed, this is the essential element distinguishing a rover from a probe or from a dishwasher for that matter. The more the rover is able to navigate autonomously, the better. 
 
-In this repo you will find several challenges, each one on a separate branch.
-Challenges' levels of difficulty and topics vary, you should pick those you feel more confident with.
-**Make sure to submit AT LEAST one challenge**, but feel free to try as many as you like.
+## Instructions 
+We need you to design a navigation system for a rover so that it can explore an area currently being investigated. 
+The rover is equipped with pose estimation sensors, and the distance between the front and rear axes of the vehicle is 1.5m. 
+A control system still needs to be developed . 
 
-In the README.md of each challenge you will find:
-- A textual description giving context on the challenge.
-- Instructions on what you should do to solve it
-- The expected output(s)
-- The challenge's maximum score, depending on its difficulty level
+We are asking your help to:
+- simulate the output of the pose estimation sensors.
+- write a realistic plausible model for the rover
+- implement a control algorithm that allows the rover to reach a target position indicated as a couple of coordinates X and Y (or if you prefer an area of a certain size around that given coordinates) completely autonomously. The algorithm must take into account the rover's current pose given by the sensors
+- some interface that shows the rover's pose and its path to the target
 
-List of challenges: 
-- ` Collide ... 400pt`
+The rover's command variables are subject to saturation:
+- the maximum speed is worth in the form of 10m/s
+- maximum steering angle holds in modulus 35°
+The rover can be considered as arrived at the destination if its distance to the target is less than or equal to 30cm.
 
-GENERAL INSTRUCTIONS:
-- clone the repo ``git clone git@github.com:team-diana/CS-Recruitment-2024-CTRL.git``
-- checkout to the branch of the challenge you want ``git checkout <BRANCH_NAME>``
-- from that, create your own PRIVATE repo.
-- Submit your code and expected outputs to your repo.
-- When you're done, give read permissions to DIANA's github account (https://github.com/TeamDiana).
-- On 23:59 of the 18th of October we will download all the submitted files.
+You can ignore the Z axis for this challenge and assume that the rover is always on a flat surface.
 
-If you need help or assistance you can write to computer.science@teamdiana.it. We will try not to give any hint on the challenges but we're easily bribable.
+## Expected deliverables
+- Provide Matlab file(s) and Simulink model(s) of your solution
+If you prefer to use another programming language, please provide the necessary files to run your solution.
 
-As always, have fun!
+## Challenge's score
+Total score: 600
