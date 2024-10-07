@@ -1,28 +1,29 @@
-# CS-Recruitment-2024-CTRL
+# [Collide](https://www.youtube.com/watch?v=ca9ub9rpNK4)
 
-If you're done with the form, now it's time for the real challenge to prove your worth to the DIANA Computer Science Department Committee. 
+Mechanics people usually hate two things: CS people touching the rover and the rover colliding with obstacles at any given speed. For the first problem they usually prevent or cure by employing wise doses of hammers applied at precise locations. For the second problem they have to instead resort to the same CS people they previously hurt.
 
-In this repo you will find several challenges, each one on a separate branch.
-Challenges' levels of difficulty and topics vary, you should pick those you feel more confident with.
-**Make sure to submit AT LEAST one challenge**, but feel free to try as many as you like.
+DIANA's rovers are equipped with a Time-of-Flight (TOF) sensor that can detect the presence of obstacles in front of the rover. The sensor provides distance measurements between the rover and the obstacle.
 
-In the README.md of each challenge you will find:
-- A textual description giving context on the challenge.
-- Instructions on what you should do to solve it
-- The expected output(s)
-- The challenge's maximum score, depending on its difficulty level
+We ask you to use a TOF sensor on the rover to detect the presence of boxes (obstacles) and generate an alert signal as output using Simulink.
+For sake of semplicity we assume to move on a X,Y plane, starting from position (0,0).
 
-List of challenges: 
-- ` Collide ... 400pt`
+## Instructions:
 
-GENERAL INSTRUCTIONS:
-- clone the repo ``git clone git@github.com:team-diana/CS-Recruitment-2024-CTRL.git``
-- checkout to the branch of the challenge you want ``git checkout <BRANCH_NAME>``
-- from that, create your own PRIVATE repo.
-- Submit your code and expected outputs to your repo.
-- When you're done, give read permissions to DIANA's github account (https://github.com/TeamDiana).
-- On 23:59 of the 18th of October we will download all the submitted files.
+1. **Distance detection with TOF**:  
+   Use the TOF sensor to measure the distance between the rover and the obstacle (box).
+   - If the sensor detects a distance between 10 cm and 100 cm, the system should generate an alert (for example, an output signal with a value of 1 to indicate the presence of a box).
+   - If the distance is less than 10 cm or greater than 100 cm, the output should indicate that no obstacle is present (for example, an output signal with a value of 0).
 
-If you need help or assistance you can write to computer.science@teamdiana.it. We will try not to give any hint on the challenges but we're easily bribable.
+2. **Handling sensor disconnection**:  
+   If the sensor does not provide any measurement (e.g., in case of disconnection), the system should generate an error alert (for example, an output signal with a negative value or a predefined value to indicate a malfunction).
 
-As always, have fun!
+3. **Modeling in Simulink**:  
+   Build a Simulink model that simulates the behavior of the TOF sensor and the alert signal output (1 = obstacle detected, 0 = no obstacle).
+   Display the output signal in Simulink based on the distance detected by the sensor.
+
+## Expected deliverables:
+
+- A Simulink file that models the sensor’s behavior and clearly shows the alert signal generated when the presence of a box is detected.
+
+## Challenge's score
+Total score: 400
