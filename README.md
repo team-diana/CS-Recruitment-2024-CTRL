@@ -13,7 +13,8 @@ In the README.md of each challenge you will find:
 - The challenge's maximum score, depending on its difficulty level
 
 List of challenges: 
-- ` Collide ... 400pt`
+- `Collide ............... 400pt`
+- `Across The Universe ... 600pt`
 
 GENERAL INSTRUCTIONS:
 - clone the repo ``git clone git@github.com:team-diana/CS-Recruitment-2024-CTRL.git``
